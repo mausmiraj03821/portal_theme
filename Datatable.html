@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portal - Bootstrap 5 Admin Dashboard Template For Developers</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portal - Bootstrap 5 Admin Dashboard Template For Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- FontAwesome JS-->
+    <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+    <!-- App CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div id="app-sidepanel" class="app-sidepanel sidepanel-hidden">
+        <div id="sidepanel-drop" class="sidepanel-drop"></div>
+        <div class="sidepanel-inner d-flex flex-column">
+            <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
+            <div class="app-branding">
+                <a class="app-logo" href="index.html"><img class="logo-icon me-2" src="assets/images/app-logo.svg" alt="logo"><span class="logo-text">PORTAL</span></a>
+
+            </div>
+            <!--//app-branding-->
+            <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
+                <ul class="app-menu list-unstyled accordion" id="menu-accordion">
+                    <li class="nav-item">
+                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                        <a class="nav-link" href="index.html">
+                            <span class="nav-icon">
+						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		  <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+		  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+		</svg>
+						         </span>
+
+                            <span class="nav-link-text">Dashboard</span>
+                            <span class="submenu-arrow">
+                                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+       <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+     </svg>
+                                  </span>
+                            <!--//submenu-arrow-->
+
+                        </a>
+                        <!--//nav-link-->
+                        <div id="dashboard" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
+                            <ul class="submenu-list list-unstyled">
+                                <li class="submenu-item"><a class="submenu-link" href="notifications.html">Stock Details Master</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="account.html">Bill Payment Village Master</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="account.html">Bill Payment Village Master</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="account.html">Bill Payment Seprate</a></li>
+                            </ul>
+                        </div>
+
+                        </a>
+                        <!--//nav-link-->
+                    </li>
+                    <!--//nav-item-->
+                    <li class="nav-item has-submenu">
+                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                        <a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-1" aria-expanded="false" aria-controls="submenu-1">
+                            <span class="nav-icon">
+                            <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-files" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M4 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4z"/>
+  <path d="M6 0h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1H4a2 2 0 0 1 2-2z"/>
+</svg>
+                             </span>
+                            <span class="nav-link-text text-center">Rate Master</span>
+                            <span class="submenu-arrow">
+                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+</svg>
+
+                             </span>
+                            <!--//submenu-arrow-->
+                        </a>
+                        <!--//nav-link-->
+                        <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
+                            <ul class="submenu-list list-unstyled">
+                                <li class="submenu-item"><a class="submenu-link" href="VillageRateMaster.html">Village Rate Master</a>
+                                </li>
+                                <li class="submenu-item"><a class="submenu-link" href="account.html">City Rate Master</a></li>
+                                <a class="nav-link" href="Datatable.html">Data Table</a>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                        <a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-1" aria-expanded="false" aria-controls="submenu-1">
+                            <span class="nav-icon">
+                            <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-files" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M4 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4z"/>
+  <path d="M6 0h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1H4a2 2 0 0 1 2-2z"/>
+</svg>
+                             </span>
+                            <span class="nav-link-text text-center">Registration</span>
+                            <span class="submenu-arrow">
+                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+</svg>
+
+                             </span>
+                            <!--//submenu-arrow-->
+                        </a>
+                        <!--//nav-link-->
+                        <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
+                            <ul class="submenu-list list-unstyled">
+                                <li class="submenu-item"><a class="submenu-link" href="VillageRateMaster.html">Village Registration</a>
+                                </li>
+                                <li class="submenu-item"><a class="submenu-link" href="account.html">City Registration </a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!--//nav-item-->
+                    <li class="nav-item">
+                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                        <a class="nav-link active" href="index.html">
+                            <span class="nav-icon">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+      <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+    </svg>
+                             </span>
+                            <span class="nav-link-text">Change Password</span>
+                        </a>
+                        <!--//nav-link-->
+                    </li>
+
+                    <li class="nav-item">
+                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                        <a class="nav-link" href="docs.html">
+                            <span class="nav-icon">
+						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+  <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+</svg>
+						         </span>
+                            <span class="nav-link-text">Add new user</span>
+                        </a>
+                        <!--//nav-link-->
+                    </li>
+                    <!--//nav-item-->
+                    <div class="app-sidepanel-footer">
+                        <nav class="app-nav app-nav-footer">
+                            <ul class="app-menu footer-menu list-unstyled">
+                                <li class="nav-item">
+                                    <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                                    <a class="nav-link" href="settings.html">
+                                        <span class="nav-icon">
+							            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"/>
+	  <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"/>
+	</svg>
+							        </span>
+                                        <span class="nav-link-text">Logout</span>
+                                    </a>
+                                    <!--//nav-link-->
+                                </li>
+                                <!--//nav-item-->
+
+                                <!--//nav-item-->
+                            </ul>
+                            <!--//footer-menu-->
+                        </nav>
+                    </div>
+                    <!--//app-sidepanel-footer-->
+        </div>
+        <!--//sidepanel-inner-->
+    </div>
+    <!--//app-sidepanel-->
+    </header>
+    <!--//app-header-->
+
+    <div class="app-wrapper" id="Ratemaster">
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <div class="col-10 m-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="float-start">Rate Master</h3>
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header py-5">
+                                            <h5>Add Customer Rate</h5>
+                                            <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <select class="form-select mt-3" aria-label="Default select example">
+                                    <option selected>Customer Rate Type</option>
+                                    <option value="1">Village Master</option>
+                                    <option value="2">City Master</option>
+                                  </select>
+                                            <select class="form-select mt-3 border-1" aria-label="Default select example">
+                                    <option selected>Customer Name</option>
+                                    <option value="1">Village </option>
+                                    <option value="2">City </option>
+                                  </select>
+                                            <div class=" mt-3">
+                                                <input type="" class="form-control text-center border-1" id="exampleFormControlInput1" placeholder="Enter Rate">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer mt-3">
+
+                                            <button type="button" class="btn btn-primary m-auto text-white">submit</button>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="btn btn-primary float-end text-white mt-1" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Add Customer Rate</a>
+
+                        </div>
+                        <div class="card-body">
+                            <br>
+                            <table id="example" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No.</th>
+                                        <th>Name</th>
+                                        <th>Add</th>
+                                        <th>Rate</th>
+                                        <th>Type</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>City</td>
+                                        <td>
+                                            <i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 </td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 </td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>City</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>41</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Systems Administrator</td>
+                                        <td>New York</td>
+                                        <td>59</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Chief Financial Officer (CFO)</td>
+                                        <td>New York</td>
+                                        <td>64</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>66</td>
+                                        <td>City</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>City</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Regional Director</td>
+                                        <td>San Francisco</td>
+                                        <td>36</td>
+                                        <td>City</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Senior Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>43</td>
+                                        <td>City</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>19</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Personnel Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>35</td>
+                                        <td>Village</td>
+                                        <td><i class="fas fa-edit"></i>
+                                            <i class="fas fa-trash-alt text-danger"></i></td>
+                                    </tr>
+
+                                    </tfoot>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            <!-- Javascript -->
+            <script src="assets/plugins/popper.min.js"></script>
+            <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+            <!-- Page Specific JS -->
+            <script src="assets/js/app.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#example').DataTable();
+                });
+            </script>
+
+
+</body>
+
+</html>
